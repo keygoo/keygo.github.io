@@ -18,9 +18,9 @@ func main() {
 
 	fileServer := http.FileServer(http.Dir("assets"))
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
-	// log.Println("Start Web Server")
+	log.Println("Start Web Server")
 
-	// http.ListenAndServe(":8080", mux)
+	http.ListenAndServe(":8080", mux)
 }
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
