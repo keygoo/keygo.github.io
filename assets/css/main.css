@@ -4,17 +4,36 @@
 
 /* Opening Section */
 .opening {
-    background: white;
+    background: linear-gradient(180deg, whitesmoke, transparent);
     height: 100vh;
 }
-.heading-text__wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.opening .heading-text__wrapper{
+    display: block;
     margin-top: 50%;
 }
-.heading-text__wrapper-item h1{
+.opening .heading-text__wrapper-item h1{
     font-weight: bold;
     font-size: 50px;
+}
+.opening .heading-images__wrapper {
+    position: relative;
+    top: 30%;
+    right: 0;
+}
+.opening .heading-images__wrapper .heading-images{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.opening .heading-images__wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.opening .heading-text__secondry-item{
+    font-size: 16px;
+}
+.opening .heading-text__button-item {
+    margin-top: 20px;
 }
 /* End Opening */
