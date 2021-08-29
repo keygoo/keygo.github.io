@@ -17,7 +17,4 @@ func main() {
 	fileServer := http.FileServer(http.Dir("assets"))
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
 	log.Println("Start Web Server")
-
-	err := http.ListenAndServe(":3000", mux)
-	log.Fatal(err)
 }
