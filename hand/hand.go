@@ -7,35 +7,6 @@ import (
 	"path"
 )
 
-func HomeHandler(w http.ResponseWriter, r *http.Request) {
-	log.Printf(r.URL.Path)
-
-	if r.URL.Path != "/" {
-		http.NotFound(w, r)
-		return
-	}
-
-	tmpl, err := template.ParseFiles(path.Join("page", "index.html"), path.Join("page", "layout.html"))
-	if err != nil {
-		log.Println(err)
-		http.Error(w, "Site Error", http.StatusInternalServerError)
-		return
-	}
-
-	data := map[string]interface{}{
-		"title":  "My Home",
-		"banner": "Welcome to My Pages",
-	}
-
-	err = tmpl.Execute(w, data)
-	if err != nil {
-		log.Println(err)
-		http.Error(w, "Site Error", http.StatusInternalServerError)
-		return
-	}
-
-}
-
 func AboutHandler(w http.ResponseWriter, r *http.Request) {
 	log.Printf(r.URL.Path)
 
