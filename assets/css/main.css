@@ -1,0 +1,20 @@
+.navbar .active{
+    color: blue;
+}
+
+/* Opening Section */
+.opening {
+    background: white;
+    height: 100vh;
+}
+.heading-text__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+}
+.heading-text__wrapper-item h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+/* End Opening */
