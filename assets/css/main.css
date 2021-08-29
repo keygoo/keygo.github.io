@@ -25,6 +25,18 @@
     top: 0;
     right: 0;
 }
+.opening .heading-images__wrapper .heading-hoverimg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 99;
+    transition: all .3s ease;
+}
+.opening .heading-images__wrapper .heading-hoverimg:hover{
+    opacity: 1;
+    transition: all .3s ease;
+}
 .opening .heading-images__wrapper img {
     width: 100%;
     height: auto;
