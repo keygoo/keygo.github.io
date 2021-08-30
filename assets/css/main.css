@@ -83,3 +83,33 @@
     margin: 15%;
 }
 /* End Service */
+
+/* Platform Section */
+.platform .platform-title{
+    text-align: center;
+}
+.platform .platform-list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 80px;
+    color: #146c43;
+}
+/* End Platform */
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa!important;
+    padding: 50px 0;
+    display: flex;
+}
+.footer .social-media__wrapper li{
+    list-style: none;
+}
+.footer .copyright-wrapper {
+    text-align: center;
+}
+.footer .copyright-wrapper a{
+    text-decoration: none;
+}
+/* End Footer */

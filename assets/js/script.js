@@ -2,6 +2,7 @@ const myScript = {
     init: () => {
         myScript.mySal();
         myScript.myParty();
+        myScript.myCarausel();
     },
     mySal: () => {
         sal();
@@ -10,6 +11,10 @@ const myScript = {
         party.confetti(runButton, {
             count: party.variation.range(20, 40),
         });
+    },
+    myCarausel: () => {
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel)
     }
 };
 
