@@ -96,12 +96,57 @@
     color: #146c43;
 }
 /* End Platform */
+.testimonial {
+    background-image: url('../images/pexels-abdullah-ghatasheh-1631677.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+.testimonial .testimonial-title {
+    text-align: center;
+}
+.testimonial .carousel-item {
+    min-height: 25rem;
+}
+.testimonial .carousel .testimonial-btn {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 10px 16px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+}
+.testimonial .carousel-item .carousel-caption h5 {
+    margin-top: 20px;
+    color: #146c43;
+    font-weight: bold;
+}
+.testimonial .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Testimonial Section */
+
+/* End Testimonial */
 
 /* Footer */
 .footer {
     background-color: #f8f9fa!important;
     padding: 50px 0;
     display: flex;
+}
+.footer .footer-link__wrapper li{
+    list-style: none;    
 }
 .footer .social-media__wrapper li{
     list-style: none;
