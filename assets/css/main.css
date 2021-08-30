@@ -151,8 +151,21 @@
 .footer .social-media__wrapper li{
     list-style: none;
 }
+.footer .social-media__wrapper{
+    float: right;
+    padding-right: 2rem;
+}
+.footer .social-media__wrapper span {
+    padding: 0 5px;
+}
+.footer .social-media__wrapper a{
+    text-decoration: none;
+    color: black;
+}
 .footer .copyright-wrapper {
     text-align: center;
+    border-top: 2px solid #146c43;
+    padding-top: 20px;
 }
 .footer .copyright-wrapper a{
     text-decoration: none;
